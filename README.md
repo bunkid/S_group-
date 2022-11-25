@@ -10,7 +10,7 @@
 
 ## Deploy page basic in github
 
-![](Screenshot%202022-11-25%20123018.png.png)
-![](Screenshot%202022-11-25%20123111.png)
+![](./lession1/Screenshot%202022-11-25%20123018.png.png)
+![](./lession1/Screenshot%202022-11-25%20123111.png)
 
 
