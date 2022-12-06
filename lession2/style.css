@@ -10,7 +10,8 @@ header
     justify-content: space-between;
     width: 70%; 
     margin: 0 auto;
-
+    align-items: center;
+    justify-content: flex-end;
     padding: 40px;
 }
 .text

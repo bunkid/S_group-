@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{   width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.heading
+{
+    border-bottom: 2px;
+}
+.form
+{
+    width: 437px;
+    height: 473px;
+    background-color: white;
+    border-radius: 2%;
+}
+.form h3
+{
+    margin-left: 40%;
+    display: block;
+    /* line-height: 3; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.sub-form
+{
+    height: 80%;
+    width: 90%;
+    margin: 0 auto;
+}

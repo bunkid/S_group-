@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .wide {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    margin: 48px 0;
+    text-align: center;
+  }
+  
+  .header__subheading {
+    color: rgb(78, 174, 252);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  
+  .header__heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  
+  .container {
+    display: flex;
+    margin: 0 -12px;
+  }
+  
+  .container__item {
+    width: 33.3333%;
+    margin: 0 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  .container__image {
+    position: relative;
+  }
+  
+  .container_img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+  
+  .container__image-desc {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: rgba(39, 123, 193, 0.7);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+  }
+  
+  .container__content {
+    padding: 24px 36px;
+  }
+  
+  .container__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content__name {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  
+  .content__price {
+    font-size: 2rem;
+    color: rgb(114, 192, 255);
+  }
+  
+  .container__contact {
+    display: flex;
+    margin: 16px 0 24px;
+    font-size: 1.6rem;
+  }
+  
+  .container__contact-icon {
+    margin-right: 12px;
+    color: rgb(147, 206, 255);
+  }
+  
+  .content__address {
+    color: rgb(196, 196, 196);
+    font-weight: 300;
+  }
+  
+  .container__desc {
+    display: flex;
+    font-size: 1.6rem;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .container__desc i {
+    color: rgb(147, 206, 255);
+  }
+  
+  .container__desc-number {
+    margin: 0 20px;
+    color: rgb(152, 151, 151);
+  }
+  
+  .container__footer {
+    padding: 0 36px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container__owner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container__owner-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .container__owner-name {
+    font-size: 2rem;
+  }
+  
+  .container__action {
+    font-size: 2rem;
+  }
+  
+  .container__action i {
+    margin-left: 16px;
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
+  
+  .footer__btn {
+    padding: 12px 48px;
+    border: 1px solid rgb(114, 192, 255);
+    border-radius: 24px;
+    background-color: #fff;
+    font-size: 1.6rem;
+    color: rgb(114, 192, 255);
+  }
+  
+  .footer__btn:hover {
+    background-color: rgb(114, 192, 255);
+    color: #fff;
+    cursor: pointer;
+  }
