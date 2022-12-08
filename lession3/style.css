@@ -1,43 +1,122 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container
-{   width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #a8c0ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+	font-family: sans-serif;	
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+    background: #7474BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.heading
-{
-    border-bottom: 2px;
+.container {
+	width: 380px;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+    
 }
-.form
-{
-    width: 437px;
-    height: 473px;
-    background-color: white;
-    border-radius: 2%;
+
+.header {
+	text-align: center;
+	padding-top: 75px;
 }
-.form h3
-{
-    margin-left: 40%;
-    display: block;
-    /* line-height: 3; */
-    margin-top: 20px;
+
+.header h1 {
+	color: #333;
+    font-size: 45px;
     margin-bottom: 20px;
-    font-size: 36px;
 }
-.sub-form
+
+.main {
+	text-align: center;
+}
+
+.main input {
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-top: 40px;
+}
+
+.main button {
+	padding-left: 0;
+	background-color: #83acf1;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #7799d4;
+}
+.main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+a{
+    display: block;
+    text-align: start;
+    margin-left: 38px;
+    margin-top: 17px;
+
+}
+.login-btn
 {
-    height: 80%;
-    width: 90%;
-    margin: 0 auto;
+    width: 300px;
+	height: 50px;
+    border-radius: 24px;
+
 }
+.main i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top: 2px;
+}
+.footer-login
+{
+    text-align: center;
+}
+.footer-login  a{
+     display: inline-block;
+     padding: 0px;
+     margin-left: 0px;
+     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
