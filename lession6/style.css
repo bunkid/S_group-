@@ -1,0 +1,62 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.nav-bar
+{   
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 60px;
+}
+.list
+{   
+    list-style: none;
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+} 
+.list >li{
+    
+    font-family: 'Inter', 'sans-serif';
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 24px;
+    color: #74717a;
+    background-color: #ffffff;
+}
+.icon-gitlab
+{
+    color: rgb(226, 67, 41);
+    height: 30px;
+    width: 30px;
+}
+.list-icon > ul
+{
+    list-style: none;
+    display: flex;
+    width: 290px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button
+{
+    width: 142px;
+    height: 44;
+    padding: 11px 16px;
+    color: #ffffff;
+    background-color: #171321;
+}
+
+
+@media screen (width < 1000px) {
+    
+}
