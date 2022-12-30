@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+          <div class="sub-item">
+                <input type="text" name="A" id="A" >
+                <button class="input max"></button>
+          </div>
+          <div class="sub-item">
+            <input type="text" name="B" id="B" >
+                <button class="input fibonaci"> click</button>
+          </div>
+    </div>
+</body>
+<script>
+       let coll = document.getElementsByClassName("input");
+       for(const btn of coll)
+       {
+        btn.addEventListener("click",function()
+        {
+               if(btn.classList.contains("max"))
+               {
+                  let b = document.getElementById("A").value;
+                  let a = b.split(","); 
+                  console.log(a);
+                  alert(Math.max(...a));
+               }
+               else
+               {
+                   const b = document.getElementById("B").value;    
+     
+                    alert("index of in fibonaci: "+ findIndex(b));
+               
+               }
+        })
+       }
+       
+
+
+
+       function findIndex(n)
+            {
+               if(n==1 || n == 2) return 1;
+               else
+                return findIndex(n-1) + findIndex(n-2);
+            }
+ 
+</script>
+<style>
+    .container
+    {
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .sub-item
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        height: 20px;
+        width: 40px;
+    }
+</style>
+</html>
