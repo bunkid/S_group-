@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        width: 100%;
+    }
+
+    input {
+        margin: 20px 10px;
+        width: 300px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 5px 5px;
+
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<body>
+
+    <!-- create form 4 input tag -->
+    <form>
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="id" placeholder="Enter your id">
+        <input type="text" id="salary" placeholder="Enter your salary">
+        <input type="text" id="city" placeholder="Enter your city">
+        <button type="submit" id="btn">Submit</button>
+    </form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>id</th>
+            <th>salary</th>
+            <th>city</th>
+        </tr>
+        
+    </table>
+    <table id="tr">
+    
+            <th>Name</th>
+            <th>id</th>
+            <th>salary</th>
+            <th>city</th>
+        </tr>
+    </table>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,17 @@
+@media screen and (max-width: 700px) {
+    .navbar__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        z-index: 10000111;
+    }
+    .header-container-menu>ul {
+        display: none;
+        list-style: none;
+    
+    }
+}
