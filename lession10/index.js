@@ -9,7 +9,7 @@ const table = document.getElementById('tr');
 
 let arr = [];
 
-table.innerHTML =
+
 btn.addEventListener('click', function (e) {
       arr.push({name: name.value, salary: salary.value, city: city.value});
       console.log(arr);
