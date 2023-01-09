@@ -12,9 +12,15 @@ btn.addEventListener('click', function (e) {
       arr.push({name: name.value, salary: salary.value, city: city.value});
       console.log(arr);
       e.preventDefault();
-
-      table.innerHTML = arr.map((item) => {
-            return `    <tr> <td>${item.name}</td> <td>${item.salary}</td> <td>${item.city}</td><td>${item.city }</td>      </tr>`
+      
+      table.innerHTML = `    <tr>
+      <th>Name</th>
+      <th>id</th>
+      <th>salary</th>
+      <th>city</th>
+  </tr>`
+    +   arr.map((item) => {
+            return `   <tr> <td>${item.name}</td> <td>${item.salary}</td> <td>${item.city}</td><td>${item.city }</td>      </tr>`
       }).join('');
 }
 )
