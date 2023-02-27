@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+.container {
+    width: 80%;
+    height: 90vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    padding-top: 3%;
+}
+
+.sub-header {
+    height: 100%;
+}
+
+.sub-header .header_logo {
+    height: 40%;
+    width: 85%;
+    padding: 0 5%;
+    margin: 0;
+
+}
+
+.sub-header .header_logo>img {
+    height: 100%;
+    width: 100%;
+}
+
+.sub-header .header-title {
+    height: 10%;
+    margin-top: 2%;
+    padding: 0px 10%;
+}
+
+.header-title span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    display: inline-block;
+}
+
+.header-title>img {
+    height: 95%;
+    width: 11%;
+}
+
+.header-btn {
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS */
+.btn__insert-task {
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 50%;
+    transition: all 1.5s ease-in;
+}
+
+.btn__insert-task:active,
+.btn__insert-task:hover {
+    background-image: linear-gradient(144deg, #3db333, #d414a4 50%, #95e01c);
+}
+
+.btn__insert-task span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.btn__insert-task:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .btn__insert-task {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+/* body-content */
+
+#todo .container_content-header {
+    background-color: #00A6DA;
+    color: white;
+    padding: 2%;
+    border-radius: 4px;
+}
+
+#doing .container_content-header {
+    background-color: rgba(204, 172, 3, 0.56);
+    color: white;
+    padding: 2%;
+    border-radius: 4px;
+}
+
+#finished .container_content-header {
+    background: #3BC057;
+    border-radius: 4px;
+    color: white;
+    padding: 2%;
+}
+
+
+/* form add */
+.modal_add_newtask,
+.modal_edit_newtask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#addform,
+#edit {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.form-lable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    margin-top: -5%;
+}
+
+.form-lable>label {
+    font-size: 3rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: red;
+}
+
+.icon_x {
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form-group {
+    height: 15%;
+    width: 80%;
+}
+
+.form-group>input {
+    height: 50%;
+    width: 100%;
+
+}
+
+.form-group>textarea {
+    height: 100%;
+    width: 100%;
+}
+
+.btn-form_add,
+.btn-form_edit {
+    position: absolute;
+    bottom: 10%;
+    background-color: #27d190;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 1s ease-in;
+}
+
+.btn-form_add,
+.btn-form_edit:hover {
+    background-color: #F082AC;
+}
+
+.none {
+    display: none;
+}
+
+/* radio check */
+.form-group_checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+/* edit */
+
+
+.container_content_line {
+    height: 0.1rem;
+    margin: 0.8rem 0;
+}
+
+/* items */
+
+.content__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-bottom: 1.5rem;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.content__item-header {
+
+    width: 95%;
+    border-bottom: 0.1rem solid #aa9393;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content__item-category {
+    /* Font-family: "Plus Jakarta Sans";
+    Font-style: Bold;
+    Font-size: 12px;
+    Line-height: 15px;
+    Line-height: 100%;
+    Align: Left Vertical;
+    align: Center;
+    Fill: Solid #4D8EFF; */
+    
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #4D8EFF;
+    text-decoration: underline;
+}
+
+.content__item-title {
+    font-size: 2.5rem;
+    color: #393939;
+    line-height: 3rem;
+}
+.content__item-action
+{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.content__item-btn
+{
+
+   cursor: pointer;
+   width: 40%;
+   margin: 0.5rem;
+}
+.content__item-body
+{
+    width: 95%;
+}
+.content__item-content
+{
+    color: #5A5C63;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
+.content__item-date
+{
+    color: #5A5C63;
+    font-size: 0.7rem;
+}

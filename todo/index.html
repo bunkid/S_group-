@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="sub-header">
+                <div class="header_logo">
+                    <img src="./public/img/logo.png" alt="">
+                </div>
+                <div class="header-title">
+                    <span>Let's get shit done!</span>
+                    <img src="./public/img/peace.png" alt="">
+                </div>
+
+            </div>
+            <div class="header-btn">
+                <button class="btn__insert-task" id="btnAddTask" onclick="openFormAdd()">+ New task</button>
+            </div>
+
+        </div>
+        <div class="body-content">
+            <div class="row">
+                <div class="col c-4">
+                    <div class="container_content" id="todo">
+                        <div class="container_content-header">
+                            <span class="container_content-header-name">Todo</span>
+                            <span class="container_content-header-quantity"></span>
+                        </div>
+                        
+                        <div class="container_content_line" style="background-color:#00A6DA ;">
+                        </div>
+                        <div class="container_content-content" id="listTodo"></div>
+                    </div>
+                </div>
+
+                <div class="col c-4">
+                    <div class="container_content" id="doing">
+                        <div class="container_content-header">
+                            <span class="container_content-header-name">Doing</span>
+                            <span class="container_content-header-quantity"></span>
+                        </div>
+                        <div class="container_content_line" style="background-color:rgba(204, 172, 3, 0.56);">
+                            
+                        </div>
+                        <div class="container_content-content" id="listDoing"></div>
+                    </div>
+                </div>
+
+                <div class="col c-4">
+                    <div class="container_content" id="finished">
+                        <div class="container_content-header">
+                            <span class="container_content-header-name">Finished</span>
+                            <span class="container_content-header-quantity"></span>
+                        </div>
+                        <div class="container_content_line" style="background-color: #3BC057;">
+                            
+                        </div>
+                        <div class="container_content-content" id="listFinished"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal_add_newtask none">
+
+
+            <form action="" id="addform">
+                <div class="icon_x">
+                    <i class="fa-solid fa-x" id="btnCloseAddForm"></i>
+                </div>
+
+                <div class="form-lable">
+                    <label for="">Add new Todo</label>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" id="addCategory" placeholder="Category">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" id="addTitle" placeholder="Title">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <textarea name="" class="form-input" id="addContent" cols="30" rows="3"
+                        placeholder="Content"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <input type="submit" class="form-input btn-form_add" value="Submit" id="btnSubmit">
+            </form>
+        </div>
+
+        <div class="modal_edit_newtask none">
+            <form action="" id="edit">
+                <div class="icon_x">
+                    <i class="fa-solid fa-x" id="btnClose_edit"></i>
+                </div>
+
+                <div class="form-lable">
+                    <label for="">Edit task Todo</label>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" id="editCategory" placeholder="Category">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" id="editTitle" placeholder="Title">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <textarea name="" class="form-input" id="editContent" cols="30" rows="3"
+                        placeholder="Content"></textarea>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-radio form-group_checkbox">
+                <div class="form-radio--item">
+                    <input type="radio" id="todoRadio" class="radio_todo" name="selected_type" value="todo">
+                    <label for="todo">Todo</label><br>
+                </div>
+                <div class="form-radio--item">
+                    <input type="radio" id="doingRadio" class="radio_todo" name="selected_type" value="doing">
+                    <label for="doing">Doing</label><br>
+                </div>
+                <div class="form-radio--item">
+                    <input type="radio" id="finishedRadio" class="radio_todo" name="selected_type" value="finished">
+                    <label for="finished">Finished</label>
+                </div>
+            </div>
+                <input type="submit" class="form-input btn-form_edit" value="Submit" id="btnSubmit">
+            </form>
+        </div>
+    </div>
+    <script src="./public/js/index.js"></script>
+</body>
+
+</html>
